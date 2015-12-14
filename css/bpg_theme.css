@@ -360,7 +360,7 @@ input,select{
         display: inline-block;
     }
     #rightBox.collapse.in {
-        display: inline-block;
+        display: inline-block !important;
     }
     .orderSummary{
         float:left;
