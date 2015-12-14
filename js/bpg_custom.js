@@ -28,3 +28,15 @@ $('#UpdateAddress').on('click',function(){
     $('#leftBody .boxContainer').not(':eq(0)').removeClass('open');
     $('#address').focus();
 });
+//Force mobile right box dd
+$('#rightBody .boxHead.visible-xs').on("click", function(){
+    var target = $(this).attr('data-target');
+    if( $(this).hasClass("collapsed")){
+        $(target).slideDown('slow').removeClass('in');
+        $(this).removeClass("collapsed");
+    }
+    else{
+        $(target).slideUp('fast').addClass('in');
+        $(this).addClass('collapsed');
+    }
+});
