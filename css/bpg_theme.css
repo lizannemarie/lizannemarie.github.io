@@ -228,7 +228,7 @@ input,select{
     text-decoration: underline;
     cursor: pointer;
 }
-.link:hover{
+.link:hover, .link:focus{
     color:#00476C;
 }
 /*tooltip*/
@@ -297,7 +297,7 @@ input,select{
   width: 0;
 }
   
-.tooltipLink:hover .tooltip {
+.tooltipLink:hover .tooltip,.tooltipLink:focus .tooltip {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: translateY(0px);
